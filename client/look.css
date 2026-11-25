@@ -1,0 +1,65 @@
+/* ==========================================================================
+   KESTREL — Steam's own pages inside the window: the classic game page,
+   downloads, the library list when it is shown. Same ink, type and amber
+   as Kestrel's views so moving between them feels like one application.
+   ========================================================================== */
+html .Library > .Container > div:not(.MainPanel):first-child, html .MainPanel { border-radius: 18px !important; background: var(--ks-s1) !important; box-shadow: var(--ks-edge) !important; }
+html :is(.UpdatesContainer .Name, .ShowcaseHeader .Focusable, .ShowcaseHeader .DialogDropDown_CurrentDisplay) { font: 650 18px var(--ks-display) !important; letter-spacing: -.01em !important; text-transform: none !important; color: var(--ks-fg) !important; }
+html :is(.AppDetailsSection .SectionHeader, h2.SectionHeader) { font: 650 15px var(--ks-display) !important; letter-spacing: 0 !important; text-transform: none !important; color: var(--ks-fg) !important; background: none !important; border: none !important; }
+html .AppDetailsSection .SectionHeader::before { display: none !important; }
+html .PlayBar .PlayBarLabel { font: 600 11px var(--ks-small) !important; letter-spacing: .06em !important; text-transform: uppercase !important; color: var(--ks-fg-3) !important; }
+html .PlayBar :is(.LastPlayedInfo, .PlayBarDetailLabel) { font: 650 14px var(--ks-display) !important; color: var(--ks-fg) !important; }
+
+/* game list */
+html .HomeBox .Bar { border-radius: 12px !important; }
+html .HomeBox .Bar.Selected { background: var(--ks-a10) !important; }
+html .SearchInput input.DialogInput, html .SearchInput input.DialogTextInputBase { height: 36px !important; border-radius: 99px !important; background-color: var(--ks-s2) !important; border: none !important; box-shadow: var(--ks-edge) !important; }
+html .ReactVirtualized__List .SectionName { font: 600 11px var(--ks-small) !important; letter-spacing: .06em !important; color: var(--ks-fg-3) !important; }
+html .ReactVirtualized__List .Container:has(> .GameListEntryContainer) { border-radius: 10px !important; }
+html .ReactVirtualized__List .Container:has(> .GameListEntryContainer):hover { background: var(--ks-s2) !important; }
+html body .ReactVirtualized__List .Container.Selected.Selected:has(> .GameListEntryContainer) { background: var(--ks-a10) !important; box-shadow: none !important; }
+html body .ReactVirtualized__List .Container.Selected:has(> .GameListEntryContainer) .GameListEntryContainer > span { color: var(--ks-accent-2) !important; }
+html .ReactVirtualized__List .Container.Selected:has(> .GameListEntryContainer)::before { display: none !important; }
+
+/* covers and cards */
+html .LibraryItemBox, html .LibraryItemBox > *, html .UpdatesContainer .HoversEnabled { border-radius: 12px !important; }
+html .LibraryItemBox::after { display: none !important; }
+html .LibraryItemActionButton.Play { border-radius: 99px !important; background: var(--ks-grad) !important; box-shadow: 0 10px 24px -10px var(--ks-accent) !important; }
+html .LibraryItemActionButton.Play svg :is(path, polygon) { fill: var(--ks-on) !important; }
+html .EventTimeSpan, html .UpdatesContainer [class*="EventDate"] { background: var(--ks-ink) !important; color: var(--ks-fg) !important; border-radius: 8px 0 0 0 !important; }
+html .UpdatesContainer .EventTime { color: var(--ks-accent-2) !important; }
+html .DemoBanner { background: var(--ks-s3) !important; color: var(--ks-fg) !important; }
+html .PageableContainer > .BoxCarousel { background: transparent !important; }
+html .GameListHomeAndSearch { box-shadow: none !important; }
+
+/* classic game page */
+html .AppDetailsMain .PlayBar > .InnerContainer { border-radius: 18px !important; background: rgba(14,16,21,.86) !important; -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: var(--ks-edge) !important; }
+html .PlayButton.ButtonChild { border-radius: 99px !important; background: var(--ks-grad) !important; color: var(--ks-on) !important; animation: none !important; box-shadow: 0 12px 28px -12px var(--ks-accent) !important; }
+html .PlayButton.ButtonChild .ButtonText { font: 650 15px var(--ks-text) !important; text-transform: none !important; letter-spacing: 0 !important; color: var(--ks-on) !important; }
+html .PlayButton.ButtonChild svg, html .PlayButton.ButtonChild svg path { fill: var(--ks-on) !important; }
+html .PlayButtonContainer:has(.StreamingSelector) .PlayButton.ButtonChild { border-radius: 99px 6px 6px 99px !important; }
+html .StreamingSelector.ButtonChild { margin-left: 3px !important; border-radius: 6px 99px 99px 6px !important; background: var(--ks-accent) !important; color: var(--ks-on) !important; }
+html .StreamingSelector.ButtonChild svg :is(path, polygon) { fill: var(--ks-on) !important; }
+html .PlayBar .RightControls .MenuButton { border-radius: 50% !important; background: var(--ks-s3) !important; box-shadow: none !important; }
+html .PlayBar .RightControls .MenuButton:hover { background: var(--ks-s4) !important; transform: none !important; }
+html .LinksSection .LinkInner { border-radius: 99px !important; background: var(--ks-s2) !important; box-shadow: var(--ks-edge) !important; color: var(--ks-fg-2) !important; font: 600 12.5px var(--ks-text) !important; text-transform: none !important; letter-spacing: 0 !important; }
+html .LinksSection .LinkInner:hover { background: var(--ks-s3) !important; color: #fff !important; transform: none !important; }
+html .AppDetailsSection:not(.LinksSection) > .Panel, html .PartnerEvent.Event { border-radius: 14px !important; background: var(--ks-s1) !important; box-shadow: var(--ks-edge) !important; }
+html .PartnerEventLargeUpdate, html .PartnerEventLargeImage_Container { background: var(--ks-s1) !important; border-radius: 14px !important; }
+html .PartnerEventFeaturedHeader { background: transparent !important; color: var(--ks-accent-2) !important; }
+html .PartnerEventType, html .PartnerEventType * { color: var(--ks-accent-2) !important; }
+html .ProgressBar .Unlocked, html .ProgressBar [class*="Unlocked"], html .PlayBar .DetailsProgressBar { background: var(--ks-grad) !important; border-radius: 99px !important; }
+html .ProgressBar, html .PlayBar .DetailsProgressContainer { background: rgba(255,255,255,.08) !important; border-radius: 99px !important; }
+html .CommunityItem.Blank, html .ReviewMetadata { background: var(--ks-s2) !important; border-radius: 12px !important; }
+html .ReviewContainer { background: transparent !important; }
+html .ReviewContainer .RatingContainer { border-radius: 14px !important; background: var(--ks-s1) !important; box-shadow: var(--ks-edge) !important; }
+html .ReviewContainer .Playtime { color: var(--ks-accent-2) !important; }
+html .ReviewContainer :is(.ReviewThumbButton, button) { border-radius: 99px !important; background: var(--ks-s3) !important; color: #fff !important; box-shadow: none !important; }
+html .ReviewContainer :is(.ReviewThumbButton, button):hover { background: var(--ks-a20) !important; }
+html .ScrollToTopButton > div { background: var(--ks-s3) !important; border-radius: 99px !important; }
+html .URLBar { margin: 8px 0 !important; border-radius: 99px !important; background: var(--ks-s1) !important; box-shadow: var(--ks-edge) !important; border: none !important; }
+html .URLBar .URLBarText { color: var(--ks-fg-3) !important; font-size: 12px !important; }
+
+/* downloads */
+html .DownloadsPage .Section { border-radius: 16px !important; }
+html .BottomBar .DownloadStatus .DetailedDownloadProgress .ProgressBar { background: var(--ks-grad) !important; animation: none !important; }

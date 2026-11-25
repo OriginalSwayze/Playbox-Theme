@@ -1,0 +1,19 @@
+/* Kestrel — the "Sign in to Steam" window. */
+@import url("./core/alias.css");
+@import url("./core/tokens.css");
+@import url("./core/base.css");
+@import url("./core/backdrop.css");
+html .Login, html .Login.AnimatedBackground, html .LoginAnimatedBackground,
+html .Login .LoginStatusContainer, html .Login .SpinnerLoaderContainer { background: transparent !important; }
+html .Login.AnimatedBackground::before, html .LoginAnimatedBackground::after, html .Login video { display: none !important; }
+html .Login .SpinnerLoaderContainer { position: relative; }
+html .Login .SpinnerLoaderContainer > img { opacity: 0 !important; }
+/* KESTREL sign-in: the kestrel's wing and an orbiting amber light */
+html .Login .SpinnerLoaderContainer::before { content: ""; position: absolute; left: 50%; top: 50%; width: 88px; height: 88px; margin: -44px 0 0 -44px; border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0 62%, var(--ks-accent), var(--ks-accent-2)); -webkit-mask: radial-gradient(circle, transparent 0 41px, #000 42px 44px); mask: radial-gradient(circle, transparent 0 41px, #000 42px 44px); animation: mr-spin 1.2s linear infinite; }
+html .Login .SpinnerLoaderContainer::after { content: ""; position: absolute; left: 50%; top: 50%; width: 36px; height: 36px; margin: -18px 0 0 -18px;
+    background: var(--ks-grad); -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M4 20.5C9 11 16.5 6 28 5.5c-5.8 3.1-9.2 7.4-10.6 13.2C13.8 16.4 9.4 17.3 4 20.5z'/></svg>") center / contain no-repeat; mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M4 20.5C9 11 16.5 6 28 5.5c-5.8 3.1-9.2 7.4-10.6 13.2C13.8 16.4 9.4 17.3 4 20.5z'/></svg>") center / contain no-repeat; }
+html .Login .LoadingStatus, html .Login .LoadingStatus > .LoginStatus { font-family: var(--ks-text) !important; font-size: 13px !important; color: var(--ks-fg-2) !important; }
+html .Login .ProgressBar { background: var(--ks-grad) !important; border-radius: 99px !important; }
+html .Login .Avatar img { border-radius: 50% !important; box-shadow: 0 0 0 3px var(--ks-accent) !important; }
+html .Login :is(.DialogButton, button[type="submit"]) { border-radius: 99px !important; }

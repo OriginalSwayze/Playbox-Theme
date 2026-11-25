@@ -1,0 +1,4 @@
+/* KESTREL — backdrop: flat ink */
+html { background: var(--ks-ink) !important; }
+body { background: transparent !important; }
+.Wrapper.ForceOpaqueBackground, .FocusNavigationRoot, .Root, .OuterFrame, .ContentFrame { background: transparent !important; }

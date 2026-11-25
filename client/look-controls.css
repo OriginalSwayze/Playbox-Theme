@@ -1,0 +1,19 @@
+/* KESTREL — controls in dialogs and native pages */
+html .DialogButton { border-radius: 12px !important; background: var(--ks-s3) !important; box-shadow: none !important; color: var(--ks-fg) !important; font-weight: 600 !important; text-transform: none !important; letter-spacing: 0 !important; transition: background-color .2s, transform .3s var(--ks-spring) !important; }
+html .DialogButton:not(.Disabled):not(:disabled):hover { background: var(--ks-s4) !important; transform: none !important; }
+html .DialogButton:not(.Disabled):not(:disabled):active { transform: scale(.97) !important; }
+html .DialogButton.Primary, html button.DialogButton.Primary { background: var(--ks-grad) !important; color: var(--ks-on) !important; box-shadow: 0 8px 22px -10px var(--ks-accent) !important; }
+html :is(.DialogInput, .DialogTextInputBase), html .DialogDropDown { border-radius: 12px !important; background-color: var(--ks-s2) !important; border: none !important; box-shadow: var(--ks-edge) !important; }
+html :is(.DialogInput, .DialogTextInputBase):focus { box-shadow: inset 0 0 0 1.5px var(--ks-accent) !important; }
+html .Toggle .ToggleRail { border-radius: 99px !important; background: var(--ks-s4) !important; }
+html .Toggle.On .ToggleRail, html .Toggle[class*="On"] .ToggleRail { background: var(--ks-accent) !important; }
+html .Toggle .ToggleSwitch { background: #fff !important; transition: transform .36s var(--ks-spring), left .36s var(--ks-spring) !important; }
+html .GenericConfirmDialog, html .ModalPosition_Content > .DialogContent { border-radius: 22px !important; background: var(--ks-s1) !important; box-shadow: inset 0 0 0 1px var(--ks-line-2), 0 40px 100px -24px #000 !important; animation: ks-in 360ms var(--ks-out) backwards; }
+html .PagedSettingsDialog_PageListColumn .PagedSettingsDialog_Title { background: none !important; -webkit-text-fill-color: #fff; color: #fff !important; font: 700 24px var(--ks-display) !important; letter-spacing: -.02em !important; text-transform: none !important; }
+html .PagedSettingsDialog .PagedSettingsDialog_PageListColumn { background: var(--ks-s1) !important; box-shadow: inset -1px 0 0 var(--ks-line); }
+html .PagedSettingsDialog_PageList .PagedSettingsDialog_PageListItem { border-radius: 10px !important; transition: background-color .15s !important; }
+html .PagedSettingsDialog_PageList .PagedSettingsDialog_PageListItem:hover { background: var(--ks-s2) !important; }
+html .PagedSettingsDialog_PageList .PagedSettingsDialog_PageListItem.Active { background: var(--ks-a10) !important; color: var(--ks-accent-2) !important; box-shadow: inset 2px 0 0 var(--ks-accent) !important; }
+html .PagedSettingsDialog_PageList .PagedSettingsDialog_PageListItem.Active::before { display: none !important; }
+html .PagedSettingsDialog .SettingsDialogSubHeader { font: 650 14px var(--ks-display) !important; color: var(--ks-fg) !important; text-transform: none !important; letter-spacing: 0 !important; }
+html .PagedSettingsDialog_PageContent, html .PagedSettingsDialog .DialogContent_InnerWidth { background: var(--ks-ink) !important; }

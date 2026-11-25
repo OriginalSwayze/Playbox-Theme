@@ -1,0 +1,124 @@
+{
+    "name": "Playbox",
+    "author": "OriginalSwayze",
+    "description": "The companion theme for the Playbox plugin (124 switchable interfaces for Steam). Dresses Steam's own pages, dialogs, menus, notifications, friends and chat, sign-in, and the Store and Community in deep ink and amber so they match.",
+    "version": "1.0.0",
+    "tags": [
+        "Dark",
+        "Companion",
+        "Amber",
+        "Plugin"
+    ],
+    "header_image": "https://raw.githubusercontent.com/OriginalSwayze/Playbox-Theme/main/media/header.png",
+    "splash_image": "https://raw.githubusercontent.com/OriginalSwayze/Playbox-Theme/main/media/splash.png",
+    "github": {
+        "owner": "OriginalSwayze",
+        "repo_name": "Playbox-Theme"
+    },
+    "Steam-WebKit": "webkit.css",
+    "Conditions": {
+        "Motion": {
+            "description": "Full: everything. Calm: hovers only, the backdrop stands still. Still: no theme motion.",
+            "tab": "Motion",
+            "default": "Full",
+            "values": {
+                "Full": {},
+                "Calm": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/motion-calm.css"
+                    }
+                },
+                "Still": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/motion-still.css"
+                    }
+                }
+            }
+        },
+        "Contrast": {
+            "description": "High: solid panels and brighter secondary text.",
+            "tab": "Accessibility",
+            "default": "Normal",
+            "values": {
+                "Normal": {},
+                "High": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/contrast-high.css"
+                    }
+                }
+            }
+        },
+        "Focus rings": {
+            "description": "Strong: a thick, high-visibility outline on whatever has keyboard or controller focus.",
+            "tab": "Accessibility",
+            "default": "Standard",
+            "values": {
+                "Standard": {},
+                "Strong": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/focus-strong.css"
+                    }
+                }
+            }
+        },
+        "Text size": {
+            "description": "Large: bigger game list and body text.",
+            "tab": "Accessibility",
+            "default": "Normal",
+            "values": {
+                "Normal": {},
+                "Large": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "options/text-large.css"
+                    }
+                }
+            }
+        }
+    },
+    "Patches": [
+        {
+            "MatchRegexString": "^Steam$",
+            "TargetCss": "main.css",
+            "TargetJs": "js/main.js"
+        },
+        {
+            "MatchRegexString": ".ModalDialogPopup",
+            "TargetCss": "main.css"
+        },
+        {
+            "MatchRegexString": ".FullModalOverlay",
+            "TargetCss": "main.css"
+        },
+        {
+            "MatchRegexString": ".friendsui-container",
+            "TargetCss": "friends.css"
+        },
+        {
+            "MatchRegexString": ".ContextMenuPopup",
+            "TargetCss": "popup.css"
+        },
+        {
+            "MatchRegexString": ".DesktopToastContainer",
+            "TargetCss": "toast.css"
+        },
+        {
+            "MatchRegexString": "^Sign in to Steam$",
+            "TargetCss": "login.css"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+/* KESTREL — layout. The Kestrel plugin owns the window's chrome; Steam's own pages fill the space below it. */
+html .Library > .Container { padding: 0 16px 16px !important; gap: 14px !important; }
+html .Library > .Container > .LibraryWindowDivider { opacity: 0; }
+html .OuterFrame > .ContentFrame:not(:has(.Library)) { padding: 0 16px 16px !important; box-sizing: border-box !important; }

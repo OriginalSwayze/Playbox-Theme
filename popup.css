@@ -1,0 +1,18 @@
+/* Kestrel — context menus and dropdown menus (each is its own window). */
+@import url("./core/alias.css");
+@import url("./core/tokens.css");
+@import url("./core/base.css");
+html, body { background: transparent !important; }
+html body .contextMenu.ContextMenuPosition,
+html body .contextMenu { background: transparent !important; border: none !important; box-shadow: none !important; }
+/* KESTREL menus: dark sheets with amber selection */
+html .contextMenu .contextMenuContents, html .contextMenu .NotificationsMenu {
+    border-radius: 16px !important; border: none !important; padding: 6px !important; background: var(--ks-s2) !important;
+    box-shadow: inset 0 0 0 1px var(--ks-line-2) !important; animation: mr-pop 200ms var(--ks-out) backwards;
+}
+html .contextMenu .contextMenuContents .contextMenuItem { border-radius: 10px !important; padding: 8px 12px !important; background: transparent !important; color: var(--ks-fg) !important; font: 500 13px var(--ks-text) !important; text-transform: none !important; letter-spacing: 0 !important; transition: background-color .12s !important; }
+html .contextMenu .contextMenuContents .contextMenuItem:not(.disabled):is(:hover,:focus,.active) { background: var(--ks-a20) !important; color: #fff !important; }
+html .contextMenu .contextMenuContents .contextMenuItem.disabled { opacity: .4; }
+html .contextMenu .contextMenuContents hr.Separator, html .contextMenu hr { border: none !important; height: 1px !important; margin: 5px 10px !important; background: var(--ks-line) !important; }
+html .contextMenu .contextMenuContents .contextMenuItem.ContextMenuAction:is(.Play,.Launch) { background: var(--ks-grad) !important; color: var(--ks-on) !important; font-weight: 650 !important; }
+html .contextMenu .contextMenuContents .contextMenuItem.ContextMenuAction svg :is(path,polygon,rect,circle) { fill: currentColor !important; }

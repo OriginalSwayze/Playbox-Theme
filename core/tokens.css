@@ -1,0 +1,32 @@
+/* KESTREL — tokens (shared with the plugin: night ink, warm paper text, kestrel amber). */
+:root {
+    --ks-ink: #08090C; --ks-s1: #0E1015; --ks-s2: #141720; --ks-s3: #1C202B; --ks-s4: #262B38;
+    --ks-line: rgba(236,232,222,.07); --ks-line-2: rgba(236,232,222,.13);
+    --ks-fg: #F2EFE8; --ks-fg-2: #A9AAB2; --ks-fg-3: #6F727D;
+    --ks-accent: #F0A23B; --ks-accent-2: #FFCB7A; --ks-on: #1A1004; --ks-cool: #8DB4FF; --ks-ok: #5FD39A;
+    --ks-a10: rgba(240,162,59,.10); --ks-a20: rgba(240,162,59,.20); --ks-a40: rgba(240,162,59,.40);
+    --ks-grad: linear-gradient(180deg, var(--ks-accent-2), var(--ks-accent));
+    --ks-edge: inset 0 0 0 1px var(--ks-line);
+    --ks-display: "Segoe UI Variable Display", "Segoe UI", sans-serif;
+    --ks-text: "Segoe UI Variable Text", "Segoe UI", sans-serif;
+    --ks-small: "Segoe UI Variable Small", "Segoe UI", sans-serif;
+    --ks-out: cubic-bezier(.16, 1, .3, 1);
+    --ks-spring: cubic-bezier(.34, 1.36, .5, 1);
+
+    --t-accent: var(--ks-accent); --t-accent-2: var(--ks-accent-2); --t-alert: #FF7A66;
+    --t-bg: var(--ks-ink); --t-panel: var(--ks-s1); --t-ink: var(--ks-on);
+    --t-fg: var(--ks-fg); --t-fg-2: var(--ks-fg-2); --t-fg-3: var(--ks-fg-3); --t-fg-4: #4A4D58; --t-line: var(--ks-line);
+
+    --mr-r: 14px; --mr-r-lg: 14px; --mr-r-md: 10px; --mr-r-sm: 8px; --mr-r-pill: 999px;
+    --mr-tint: 100%;
+    --mr-glass: var(--ks-s1); --mr-glass-strong: var(--ks-s2); --mr-glass-solid: var(--ks-s2);
+    --mr-blur: 0px; --mr-glass-filter: none; --mr-glass-edge: var(--ks-edge);
+    --mr-shadow-1: 0 1px 3px rgba(0,0,0,.4); --mr-shadow-2: 0 16px 40px -18px rgba(0,0,0,.8); --mr-shadow-3: 0 40px 90px -30px rgba(0,0,0,.9);
+    --mr-font: var(--ks-text); --mr-font-display: var(--ks-display);
+    --mr-grad: var(--ks-grad); --mr-grad-loop: linear-gradient(90deg, var(--ks-accent), var(--ks-accent-2), var(--ks-accent));
+    --mr-grad-soft: linear-gradient(90deg, var(--ks-a10), transparent 90%);
+    --mr-on-accent: var(--ks-on); --mr-ease: var(--ks-out); --mr-ease-spring: var(--ks-spring);
+    --mr-t-1: 140ms; --mr-t-2: 240ms; --mr-t-3: 420ms; --mr-t-4: 700ms;
+    --mr-spot-size: 0px; --mr-spot: none;
+    --mr-ok: var(--ks-ok); --mr-warn: #FFC24A;
+}
