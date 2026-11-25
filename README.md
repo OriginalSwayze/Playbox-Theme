@@ -16,9 +16,10 @@ For the interfaces themselves, install the Playbox plugin (see its
 [README](https://github.com/OriginalSwayze/Playbox#install-all-in-one)). The theme works without the plugin, and the
 plugin works without the theme.
 
-## Options
+## Options (in Millennium's theme settings)
 - **Motion:** Full, Calm (hovers only) or Still.
 - **Contrast:** Normal or High (solid panels and brighter secondary text).
+- And more: text size, focus rings, compact lists, cover effects and a privacy mode, among others.
 
 ## Source
 This folder is built from `skin-src/` in the [Playbox repository](https://github.com/OriginalSwayze/Playbox).
