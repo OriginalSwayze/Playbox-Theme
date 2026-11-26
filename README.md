@@ -8,13 +8,11 @@ Community) in deep ink and amber so they match.
 ![Playbox](media/header.png)
 
 ## Install
-- **From Millennium:** find **Playbox** in Millennium's theme browser and install it.
-- **By hand:** put this folder in `Steam\millennium\themes\Playbox\`, then choose **Playbox** in Millennium's
-  theme settings.
 
-For the interfaces themselves, install the Playbox plugin (see its
-[README](https://github.com/OriginalSwayze/Playbox#install-all-in-one)). The theme works without the plugin, and the
-plugin works without the theme.
+- **With [Beyond Steam](https://github.com/OriginalSwayze/Beyond-Steam) (easiest):** in Steam press **Ctrl+Shift+B**, open
+  **Get more** and install **Playbox**.
+- **By hand:** download **Playbox-Theme.zip** from the [latest release](https://github.com/OriginalSwayze/Playbox-Theme/releases/latest) and unzip
+  it into `%APPDATA%\Beyond Steam\themes\Kestrel` (Beyond Steam) or `Steam\millennium\themes\Kestrel` (Millennium).
 
 ## Options (in Millennium's theme settings)
 - **Motion:** Full, Calm (hovers only) or Still.
